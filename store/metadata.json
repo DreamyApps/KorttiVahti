@@ -1,0 +1,17 @@
+{
+  "appName": "KorttiVahti",
+  "subtitle": "Pokemon-korttien hintavahti",
+  "description": {
+    "fi": "KorttiVahti vertailee Pokemon-keräilykorttituotteiden hintoja yli 20 suomalaisesta verkkokaupasta. Löydä parhaat tarjoukset booster boxeille, Elite Trainer Boxeille, tineille ja muille suljetuille tuotteille.\n\nOminaisuudet:\n• Hintavertailu yli 20 kaupasta\n• Hintahistoria ja trendit\n• Ilmoitukset hinnanlaskuista\n• Takaisin varastossa -hälytykset\n• Suosikit ja hintahälytykset\n• Suomi ja englanti\n• Tumma ja vaalea teema",
+    "en": "KorttiVahti compares Pokemon TCG product prices across 20+ Finnish online stores. Find the best deals on booster boxes, Elite Trainer Boxes, tins, and other sealed products.\n\nFeatures:\n• Price comparison across 20+ stores\n• Price history and trends\n• Price drop notifications\n• Back-in-stock alerts\n• Favorites and price alerts\n• Finnish and English\n• Dark and light mode"
+  },
+  "keywords": [
+    "pokemon", "pokemon cards", "pokemon tcg", "price comparison",
+    "kortti", "keräilykortit", "hintavertailu", "booster box",
+    "elite trainer box", "etb", "finland", "suomi"
+  ],
+  "category": "Shopping",
+  "privacyPolicyUrl": "https://dreamyapps.com/korttivahti/privacy",
+  "supportUrl": "https://dreamyapps.com/korttivahti/support",
+  "marketingUrl": "https://dreamyapps.com/korttivahti"
+}

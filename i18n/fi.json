@@ -1,0 +1,95 @@
+{
+  "app": {
+    "name": "KorttiVahti"
+  },
+  "tabs": {
+    "home": "Koti",
+    "search": "Haku",
+    "favorites": "Suosikit",
+    "settings": "Asetukset"
+  },
+  "home": {
+    "greeting": "Tervetuloa",
+    "bestDeals": "Parhaat tarjoukset",
+    "trending": "Suositut",
+    "newArrivals": "Uudet tuotteet",
+    "seeAll": "Näytä kaikki",
+    "categories": "Kategoriat",
+    "fromStores": "{{count}} kaupasta",
+    "inStock": "Varastossa",
+    "outOfStock": "Loppu",
+    "priceFrom": "alk."
+  },
+  "search": {
+    "placeholder": "Hae tuotteita...",
+    "filters": "Suodattimet",
+    "sort": "Järjestä",
+    "results": "{{count}} tulosta",
+    "noResults": "Ei tuloksia",
+    "noResultsDesc": "Kokeile eri hakusanoja tai suodattimia",
+    "sortOptions": {
+      "price_asc": "Halvin ensin",
+      "price_desc": "Kallein ensin",
+      "newest": "Uusin ensin",
+      "name": "Nimi A-Ö"
+    },
+    "allCategories": "Kaikki"
+  },
+  "product": {
+    "priceComparison": "Hintavertailu",
+    "priceHistory": "Hintahistoria",
+    "lowestPrice": "Halvin hinta",
+    "highestPrice": "Kallein hinta",
+    "stores": "{{count}} kauppaa",
+    "visitStore": "Kauppaan",
+    "addToWatchlist": "Lisää seurantaan",
+    "removeFromWatchlist": "Poista seurannasta",
+    "setPriceAlert": "Aseta hintahälytys",
+    "share": "Jaa",
+    "set": "Setti",
+    "category": "Kategoria",
+    "lastUpdated": "Päivitetty",
+    "savings": "Säästä jopa",
+    "7d": "7 pv",
+    "30d": "30 pv",
+    "90d": "90 pv",
+    "all": "Kaikki"
+  },
+  "favorites": {
+    "title": "Suosikit",
+    "empty": "Ei suosikkeja",
+    "emptyDesc": "Lisää tuotteita seurantaan napauttamalla sydäntä",
+    "priceAlerts": "Hintahälytykset"
+  },
+  "settings": {
+    "title": "Asetukset",
+    "language": "Kieli",
+    "theme": "Teema",
+    "notifications": "Ilmoitukset",
+    "priceDrops": "Hinnanlaskut",
+    "newProducts": "Uudet tuotteet",
+    "backInStock": "Takaisin varastossa",
+    "dailyDeals": "Päivän parhaat",
+    "account": "Tili",
+    "signIn": "Kirjaudu sisään",
+    "signOut": "Kirjaudu ulos",
+    "about": "Tietoja",
+    "version": "Versio",
+    "privacy": "Tietosuoja",
+    "terms": "Käyttöehdot",
+    "madeIn": "Tehty Suomessa 🇫🇮",
+    "dark": "Tumma",
+    "light": "Vaalea",
+    "system": "Järjestelmä",
+    "finnish": "Suomi",
+    "english": "English"
+  },
+  "common": {
+    "loading": "Ladataan...",
+    "error": "Virhe",
+    "retry": "Yritä uudelleen",
+    "cancel": "Peruuta",
+    "save": "Tallenna",
+    "done": "Valmis"
+  }
+}

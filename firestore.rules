@@ -1,0 +1,36 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Products are readable by anyone, writable only by Cloud Functions (admin SDK)
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if false;
+
+      match /listings/{storeId} {
+        allow read: if true;
+        allow write: if false;
+      }
+
+      match /priceHistory/{entryId} {
+        allow read: if true;
+        allow write: if false;
+      }
+    }
+
+    // Stores are readable by anyone
+    match /stores/{storeId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Users can only access their own data
+    match /users/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null && request.auth.uid == userId;
+      allow delete: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}

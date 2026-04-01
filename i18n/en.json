@@ -1,0 +1,95 @@
+{
+  "app": {
+    "name": "KorttiVahti"
+  },
+  "tabs": {
+    "home": "Home",
+    "search": "Search",
+    "favorites": "Favorites",
+    "settings": "Settings"
+  },
+  "home": {
+    "greeting": "Welcome",
+    "bestDeals": "Best Deals",
+    "trending": "Trending",
+    "newArrivals": "New Arrivals",
+    "seeAll": "See All",
+    "categories": "Categories",
+    "fromStores": "from {{count}} stores",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "priceFrom": "from"
+  },
+  "search": {
+    "placeholder": "Search products...",
+    "filters": "Filters",
+    "sort": "Sort",
+    "results": "{{count}} results",
+    "noResults": "No Results",
+    "noResultsDesc": "Try different search terms or filters",
+    "sortOptions": {
+      "price_asc": "Price: Low to High",
+      "price_desc": "Price: High to Low",
+      "newest": "Newest First",
+      "name": "Name A-Z"
+    },
+    "allCategories": "All"
+  },
+  "product": {
+    "priceComparison": "Price Comparison",
+    "priceHistory": "Price History",
+    "lowestPrice": "Lowest Price",
+    "highestPrice": "Highest Price",
+    "stores": "{{count}} stores",
+    "visitStore": "Visit Store",
+    "addToWatchlist": "Add to Watchlist",
+    "removeFromWatchlist": "Remove from Watchlist",
+    "setPriceAlert": "Set Price Alert",
+    "share": "Share",
+    "set": "Set",
+    "category": "Category",
+    "lastUpdated": "Updated",
+    "savings": "Save up to",
+    "7d": "7D",
+    "30d": "30D",
+    "90d": "90D",
+    "all": "All"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "empty": "No Favorites Yet",
+    "emptyDesc": "Tap the heart icon on products to track them here",
+    "priceAlerts": "Price Alerts"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Theme",
+    "notifications": "Notifications",
+    "priceDrops": "Price Drops",
+    "newProducts": "New Products",
+    "backInStock": "Back in Stock",
+    "dailyDeals": "Daily Best Deals",
+    "account": "Account",
+    "signIn": "Sign In",
+    "signOut": "Sign Out",
+    "about": "About",
+    "version": "Version",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "madeIn": "Made in Finland 🇫🇮",
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System",
+    "finnish": "Suomi",
+    "english": "English"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "done": "Done"
+  }
+}
