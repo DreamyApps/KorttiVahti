@@ -1,18 +1,10 @@
-// Firebase configuration for the KorttiVahti app.
-// Replace with your actual Firebase project config from the Firebase Console.
-
 const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT.firebaseapp.com',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_PROJECT.appspot.com',
-  messagingSenderId: 'YOUR_SENDER_ID',
-  appId: 'YOUR_APP_ID',
+  apiKey: 'AIzaSyCTKSNDmwuhJ-RaFMQhLe4w7AMp5fEnImg',
+  authDomain: 'korttivahti.firebaseapp.com',
+  projectId: 'korttivahti',
+  storageBucket: 'korttivahti.firebasestorage.app',
+  messagingSenderId: '232630971201',
+  appId: '1:232630971201:ios:13cddf92b150fd4fe58fc0',
 };
 
 export default firebaseConfig;
-
-// TODO: Initialize Firebase when config is set
-// import { initializeApp } from '@react-native-firebase/app';
-// const app = initializeApp(firebaseConfig);
-// export { app };
