@@ -14,11 +14,13 @@ const TERM_MAP: Record<string, string> = {
 const CATEGORY_KEYWORDS: Record<string, string[]> = {
   booster_box: ['booster box', 'booster display', 'display box', '36 pack', '36 booster'],
   etb: ['elite trainer box', 'etb', 'elite-trainer-box'],
-  tin: ['tin', 'tina', 'metallilaatikko'],
-  collection: ['collection', 'premium collection', 'kokoelma', 'premium box'],
-  blister: ['blister', 'blister pack', '3-pack', '3 pack', 'sleeved booster'],
-  bundle: ['bundle', 'booster bundle', '6 pack'],
-  special: ['ultra premium', 'upc', 'special collection', 'trainer gallery', 'premium'],
+  tin: [' tin ', ' tin,', '-tin ', ' tins ', 'metallilaatikko', 'stacking tin'],
+  collection: ['collection', 'premium collection', 'kokoelma', 'premium box', 'collector chest'],
+  blister: ['blister', 'blister pack', '3-pack', '3 pack', 'sleeved booster', 'checklane'],
+  bundle: ['bundle', 'booster bundle', '6 pack', '6-pack'],
+  special: ['ultra premium', 'upc', 'special collection', 'trainer gallery', 'battle deck',
+            'league battle', 'tech sticker', 'poster collection', 'surprise box', 'mystery box',
+            'binder', 'playmat'],
 };
 
 export function normalizeName(name: string): string {
@@ -36,13 +38,19 @@ export function normalizeName(name: string): string {
 }
 
 export function detectCategory(name: string): string {
-  const lower = name.toLowerCase();
+  const lower = ` ${name.toLowerCase()} `;
 
-  for (const [category, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
-    if (keywords.some((kw) => lower.includes(kw))) {
-      return category;
-    }
-  }
+  // Check specific categories in priority order
+  if (CATEGORY_KEYWORDS.booster_box.some((kw) => lower.includes(kw))) return 'booster_box';
+  if (CATEGORY_KEYWORDS.etb.some((kw) => lower.includes(kw))) return 'etb';
+  if (CATEGORY_KEYWORDS.collection.some((kw) => lower.includes(kw))) return 'collection';
+  if (CATEGORY_KEYWORDS.bundle.some((kw) => lower.includes(kw))) return 'bundle';
+  if (CATEGORY_KEYWORDS.tin.some((kw) => lower.includes(kw))) return 'tin';
+  if (CATEGORY_KEYWORDS.blister.some((kw) => lower.includes(kw))) return 'blister';
+  if (CATEGORY_KEYWORDS.special.some((kw) => lower.includes(kw))) return 'special';
+
+  // Fallback: single boosters that aren't booster boxes
+  if (lower.includes('booster') && !lower.includes('booster box')) return 'blister';
 
   return 'special';
 }

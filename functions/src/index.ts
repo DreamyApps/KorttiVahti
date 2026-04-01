@@ -4,7 +4,10 @@ import { onRequest } from 'firebase-functions/v2/https';
 import { matchAndUpsertProducts } from './services/productMatcher';
 import { sendDailyDealsDigest } from './services/notificationService';
 
-// Tier 1 Scrapers
+// Verified Scrapers (real, tested selectors)
+import { KorttistoppiScraper } from './scrapers/korttistoppi';
+
+// Tier 1 Scrapers (selectors need verification per store)
 import { PoromagiaScraper } from './scrapers/poromagia';
 import { PuolenkuunPelitScraper } from './scrapers/puolenkuunpelit';
 import { FantasiapelitScraper } from './scrapers/fantasiapelit';
@@ -49,6 +52,7 @@ export const scrapeTier1 = onSchedule(
   { schedule: '0 * * * *', timeZone: 'Europe/Helsinki', memory: '512MiB', timeoutSeconds: 300 },
   async () => {
     const scrapers = [
+      new KorttistoppiScraper(),
       new PoromagiaScraper(),
       new PuolenkuunPelitScraper(),
       new FantasiapelitScraper(),
@@ -96,6 +100,7 @@ export const triggerScrape = onRequest(
     const tier = req.query.tier as string ?? 'all';
 
     const tier1 = [
+      new KorttistoppiScraper(),
       new PoromagiaScraper(),
       new PuolenkuunPelitScraper(),
       new FantasiapelitScraper(),
